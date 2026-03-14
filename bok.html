@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goodbye Message</title>
+  <style>
+    /* Full page GIF background */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      background: url('https://media.giphy.com/media/l0Exk8EUzSLsrErEQ/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      background-color: rgba(76, 175, 80, 0.8);
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    }
+
+    button:hover {
+      background-color: rgba(69, 160, 73, 0.9);
+    }
+
+    #imageContainer {
+      margin-top: 20px;
+      display: none;
+    }
+
+    #imageContainer img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bye Baby 👋</h1>
+  <p>See you on Monday! Rest well ❤️</p>
+  
+  <button onclick="showImage()">Click me to see my reaction</button>
+
+  <div id="imageContainer">
+    <img src="/image.png" alt="Her Picture">
+  </div>
+
+  <script>
+    function showImage() {
+      document.getElementById('imageContainer').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
